@@ -3,6 +3,7 @@ import Hero from "@/components/home/hero";
 import HeroFooter from "@/components/home/hero-footer";
 import OnAir from "@/components/home/onair";
 import Popular from "@/components/home/popular";
+import BreakingNews from "@/components/home/breaking-news";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroFooter />
       <OnAir />
       <Popular />
+      <BreakingNews />
     </div>
   );
 }
