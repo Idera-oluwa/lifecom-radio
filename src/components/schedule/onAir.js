@@ -38,6 +38,7 @@ const onAir = () => {
         playing={playing}
         onPlay={handleOnPlay}
       />
+      <div className="w-[178px] h-[181px] md:w-[246px] md:h-[250px] mx-auto bg-gradient-to-b from-[#004461] to-[#86890200] flex justify-center items-center rounded-[4px]">
       <img
         src={
           radioInfo?.image
@@ -47,8 +48,9 @@ const onAir = () => {
             : null
         }
         alt=""
-        className="w-[167px] h-[170px] md:w-[235px] md:h-[239px] mx-auto"
+        className="w-[167px] h-[170px] md:w-[235px] md:h-[239px]"
       />
+      </div>
       <p className="text-[10px] text-[#CCC9DC] font-medium text-center mx-auto mt-[0.9rem]">Now Playing</p>
       <p className="font-semibold text-white text-[14px] lg:text-[16px] leading-3 lg:leading-[19px] mt-[0.5rem]">
             {radioInfo?.album ? radioInfo.album : "Nil"}
