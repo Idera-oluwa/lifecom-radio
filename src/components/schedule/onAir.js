@@ -24,7 +24,7 @@ const onAir = () => {
     RadioData();
   }, [radioInfo]);
 
-  console.log(radioInfo)
+  console.log(radioInfo?.image)
 
   return (
     <div
@@ -37,7 +37,7 @@ const onAir = () => {
         playing={playing}
         onPlay={handleOnPlay}
       />
-      <img src={radioInfo?.image} alt="" className="w-[106px] h-[108px] absolute top-0 mt-[90px] left-0 right-0 mx-auto"/>
+      <img src={radioInfo?.image} alt="" className="w-[106px] h-[108px] md:w-[235px] md:h-[239px] absolute top-0 mt-[90px] md:mt-[120px] left-0 right-0 mx-auto -z-[10"/>
       <img
         src={`${
           playing ? "/images/schedule/onair2.png" : "/images/schedule/onair.png"
