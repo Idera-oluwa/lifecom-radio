@@ -54,7 +54,7 @@ const onAir = () => {
             {radioInfo?.album ? radioInfo.album : "Nil"}
           </p>
           <div
-          className="bg-transparent border-[#324A5F] border-2 w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full flex items-center justify-center cursor-pointer mt-[1.1rem]"
+          className="bg-transparent border-[#324A5F] border-[3px] w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full flex items-center justify-center cursor-pointer mt-[1.1rem]"
           onClick={() => togglePlay()}>
           <img
             src={
