@@ -25,7 +25,7 @@ const onAir = () => {
   }, [radioInfo]);
 
   console.log(radioInfo);
-  // console.log(radioInfo?.image);
+  console.log(`${url}${radioInfo?.image}`);
 
   return (
     <div
@@ -42,7 +42,7 @@ const onAir = () => {
         src={
           radioInfo?.image
             ? radioInfo?.image.startsWith("tmp")
-              ? `url${radioInfo?.image}`
+              ? `${url}${radioInfo?.image}`
               : radioInfo?.image
             : null
         }
