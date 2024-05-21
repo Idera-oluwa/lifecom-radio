@@ -1,10 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import ReactHowler from "react-howler";
+import BarVisualizer from "./barVisualizer";
 
 const onAir = () => {
   const [playing, setPlaying] = useState(false);
   const [radioInfo, setRadioInfo] = useState({});
+  const canvasRef = useRef(null);
   const url = "https://fastcast4u.com/player/lifecomradio/";
   const togglePlay = () => {
     setPlaying(!playing);
@@ -27,6 +29,8 @@ const onAir = () => {
   console.log(radioInfo);
   console.log(`${url}${radioInfo?.image}`);
 
+  
+
   return (
     <div
       className={`${
@@ -38,6 +42,9 @@ const onAir = () => {
         playing={playing}
         onPlay={handleOnPlay}
       />
+      {playing && <div className="absolute top-0 mt-[119px] md:mt-[210px] right-0 mr-[calc(50%-9rem)] md:mr-[calc(50%-16rem)] transform -translate-y-1/2">
+            <BarVisualizer />
+          </div> }
       <div className="w-[178px] h-[181px] md:w-[246px] md:h-[250px] mx-auto bg-gradient-to-b from-[#004461] to-[#86890200] flex justify-center items-center rounded-[4px]">
       <img
         src={
