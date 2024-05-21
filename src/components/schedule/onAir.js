@@ -37,7 +37,10 @@ const onAir = () => {
         playing={playing}
         onPlay={handleOnPlay}
       />
-      <img src={radioInfo?.image} alt="" className="w-[106px] h-[108px] md:w-[235px] md:h-[239px] absolute top-0 mt-[90px] md:mt-[120px] left-0 right-0 mx-auto -z-[10"/>
+      <div className="w-[110px] h-[112px] md:w-[240px] md:h-[244px] bg-gradient-to-b from-[#004461] to-[#86890200] rounded-[4px] absolute top-0 mt-[90px] md:mt-[120px] left-0 right-0 mx-auto -z-[10">
+      <img src={radioInfo?.image} alt="" className="w-[106px] h-[108px] md:w-[235px] md:h-[239px]"/>
+      </div>
+      
       <img
         src={`${
           playing ? "/images/schedule/onair2.png" : "/images/schedule/onair.png"
