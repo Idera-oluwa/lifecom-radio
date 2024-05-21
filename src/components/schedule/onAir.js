@@ -31,7 +31,7 @@ const onAir = () => {
     <div
       className={`${
         playing ? "bg-onAir-bg2" : "bg-onAir-bg"
-      } bg-cover bg-no-repeat w-[100%] h-[350px] md:h-[552px] relative transition-all ease-out duration-500`}>
+      } bg-cover bg-no-repeat w-[100%] h-[350px] md:h-[552px] relative transition-all ease-out duration-500 flex flex-col justify-center items-center pt-[2rem]`}>
       <ReactHowler
         src="https://eu9.fastcast4u.com/proxy/lifecomradio/stream"
         html5={true}
@@ -47,17 +47,36 @@ const onAir = () => {
             : null
         }
         alt=""
-        className="w-[106px] h-[108px] md:w-[235px] md:h-[239px] absolute top-0 mt-[90px] md:mt-[120px] left-0 right-0 mx-auto -z-[10"
+        className="w-[167px] h-[170px] md:w-[235px] md:h-[239px] mx-auto"
       />
-      <img
+      <p className="text-[10px] text-[#CCC9DC] font-medium text-center mx-auto mt-[0.9rem]">Now Playing</p>
+      <p className="font-semibold text-white text-[14px] lg:text-[16px] leading-3 lg:leading-[19px] mt-[0.5rem]">
+            {radioInfo?.album ? radioInfo.album : "Nil"}
+          </p>
+          <div
+          className="bg-transparent border-[#324A5F] border-2 w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full flex items-center justify-center cursor-pointer mt-[1.1rem]"
+          onClick={() => togglePlay()}>
+          <img
+            src={
+              playing ? "/images/podcasts/pause.png" : "/images/home/play.svg"
+            }
+            alt=""
+            className={`${
+              playing
+                ? "w-[10px] h-[12.5px] lg:w-[22px] lg:h-[22px]"
+                : "w-[10px] h-[12.5px] lg:w-[17.69px] lgh-[21.79px]"
+            }`}
+          />
+        </div>
+      {/* <img
         src={`${
           playing ? "/images/schedule/onair2.png" : "/images/schedule/onair.png"
         }`}
         alt=""
         className="absolute w-[110px] h-[113px] lg:w-auto lg:h-auto right-0 bottom-0  mb-[2rem] mr-[10%] md:mr-[6rem]"
-      />
+      /> */}
 
-      <div className="flex flex-row absolute left-0 bottom-0 mb-[4rem] ml-[10%] md:ml-[20%] gap-4 md:gap-[3rem] items-center">
+      {/* <div className="flex flex-row absolute left-0 bottom-0 mb-[4rem] ml-[10%] md:ml-[20%] gap-4 md:gap-[3rem] items-center">
         <div
           className="bg-transparent border-[#324A5F] border-4 w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full flex items-center justify-center cursor-pointer"
           onClick={() => togglePlay()}>
@@ -81,7 +100,7 @@ const onAir = () => {
             {radioInfo?.album ? radioInfo.album : "Nil"}
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
