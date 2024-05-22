@@ -17,7 +17,7 @@ const footer = ({locale}) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
+      .sendForm(process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_SERVICE_ID2, process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_TEMPLATE_ID2, form.current, {
         publicKey: process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_PUBLIC_KEY,
       })
       .then(
