@@ -10,7 +10,7 @@ import Navbar from '@/components/navbar'
 const page = ({params : {locale}}) => {
   return (
     <div>
-      <Navbar locale={locale} color='#1B2A41'/>
+      <Navbar locale={locale} color='#1f2a3b'/>
         <OnAir />
         <Contact />
         <Recent />

@@ -18,11 +18,9 @@ const subscribe = () => {
       .then(
         () => {
           form.current.reset()
-          console.log('success')
           toast("Form submitted successfully")
         },
         (error) => {
-          console.log('FAILED...', error.text)
           toast('FAILED...', error.text)
         },
       );
