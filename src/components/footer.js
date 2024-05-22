@@ -1,12 +1,35 @@
 "use client"
-import React,{useState} from 'react'
+import React,{useState, useRef} from 'react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import initTranslations from '@/i18n';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const footer = ({locale}) => {
   const pathname = usePathname();
   const pathnamee=locale==="en"?pathname:pathname.substring(3)
+  const form = useRef();
+
+  const sendEmail = (e) => {
+     
+    e.preventDefault();
+
+    emailjs
+      .sendForm(process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: process.env.NEXT_PUBLIC_REACT_APP_EMAILJS_PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          form.current.reset()
+          toast("Form submitted successfully")
+        },
+        (error) => {
+          toast('FAILED...', error.text)
+        },
+      );
+  };
 
   const [text1, setText1] = useState('')
   const [text2, setText2] = useState('')
@@ -29,6 +52,7 @@ const footer = ({locale}) => {
 
   return (
     <div className='hidden md:block mt-[12rem] bg-[#09172E] w-full pt-[3rem]'>
+        <ToastContainer />
         <div className='w-[90vw] mx-auto flex flex-row justify-between pb-[4rem]'>
          <div>
             <img src='/images/home/logo.svg' alt='' className='w-[96px] h-[96px]'/>
@@ -72,8 +96,7 @@ const footer = ({locale}) => {
          <div className=''>
             <p className='font-bold text-[16px] text-[#CCC9DC] leading-[19px]'>{text1}</p>
             <form 
-            action="https://formspree.io/f/xgegqzod"
-            method="POST"          
+           ref={form} onSubmit={sendEmail}         
             className='flex flex-row mt-[1rem]'>
                 <input type='text' name='email' placeholder={text3} className='w-[290px] h-[51px] outline outline-[2px] outline-[#324A5F] text-[12px] font-medium text-[#CCC9DC] leading-[14px] bg-transparent px-[1rem] rounded-[4px]'/>
                 <button type="submit" className='bg-[#324A5F] w-[72px] h-[55px] flex items-center justify-center ml-[1rem] rounded-[4px] cursor-pointer mt-[-0.1rem]'>
