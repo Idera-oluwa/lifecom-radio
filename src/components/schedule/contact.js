@@ -15,7 +15,7 @@ const contact = () => {
           </p>
           <a target="_blank" href="tel:+443333397371">
             <p className="text-[10px] lg:text-[14px] font-semibold text-[#F5F5F5]">
-              09033065500
+            03333397371{" "}
             </p>
           </a>
         </div>
@@ -30,7 +30,7 @@ const contact = () => {
           </p>
           <a target="_blank" href="sms:+443333397371">
             <p className="text-[10px] lg:text-[14px] font-semibold text-[#F5F5F5]">
-              9033065500
+            03333397371
             </p>
           </a>
         </div>
