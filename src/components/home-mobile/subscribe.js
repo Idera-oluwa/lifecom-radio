@@ -4,7 +4,7 @@ const subscribe = () => {
   return (
     <div className='mt-[5rem] flex flex-col items-center'>
         <p className='font-semibold text-white leading-[21.78px] text-[18px] text-center'>Subscribe to stay updated</p>
-        <p className='text-[12px] font-normal text-white leading-[14.5px] text-center w-[336px] mt-[0.5rem]'>Be the first to get information on added shows and podcasts on Lifecom radio 87.7fm</p>
+        <p className='text-[12px] font-normal text-white leading-[14.5px] text-center w-[336px] mt-[0.5rem]'>Be the first to get information on added shows and podcasts on Lifecom radio 87.7KentUK</p>
         <form
        action="https://formspree.io/f/xgegqzod"
        method="POST"
