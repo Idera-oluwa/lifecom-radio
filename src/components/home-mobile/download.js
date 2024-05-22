@@ -16,13 +16,13 @@ const download = () => {
             <p className='text-[12px] text-white font-semibold leading-[14.5px] '>PLAY STORE</p>
           </div>
         </div> </a>
-        <div className='flex flex-row gap-[0.5rem] bg-[#1B2A41] w-[137px] h-[45px] justify-center items-center'>
+        <a href='https://apps.apple.com/gb/app/lifecom-radio/id1479978358'><div className='flex flex-row gap-[0.5rem] bg-[#1B2A41] w-[137px] h-[45px] justify-center items-center'>
           <img src='/images/home/apple-logo.svg' alt='' className='w-[23px] h-[23px]'/>
           <div>
             <p className='text-[10px] text-white font-normal leading-[12px] '>Get it on the</p>
             <p className='text-[12px] text-white font-semibold leading-[14.5px] '>APP STORE</p>
           </div>
-        </div>
+        </div></a>
             </div>
         </div>
     </div>

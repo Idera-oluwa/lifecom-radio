@@ -19,13 +19,13 @@ const download = async ({locale}) => {
             <p className='text-[14px] text-white font-semibold leading-[17px] '>PLAY STORE</p>
           </div>
         </div> </a>
-        <div className='flex flex-row gap-[0.5rem] bg-[#1B2A41] w-[181px] h-[63px] justify-center items-center'>
+        <a href='https://apps.apple.com/gb/app/lifecom-radio/id1479978358'><div className='flex flex-row gap-[0.5rem] bg-[#1B2A41] w-[181px] h-[63px] justify-center items-center'>
           <img src='/images/home/apple-logo.svg' alt='' className='w-[24px] h-[27px]'/>
           <div>
             <p className='text-[12px] text-white font-normal leading-[14.5px] '>Get it on the</p>
             <p className='text-[14px] text-white font-semibold leading-[17px] '>APP STORE</p>
           </div>
-        </div>
+        </div></a>
        </div>
       <img src='/images/home/qrcode.svg' className='w-[170px] h-[147px]'/>
     </div>

@@ -37,11 +37,15 @@ const header = async ({ locale }) => {
               className="cursor-pointer lg:w-[30px] lg:h-[30px] w-[17px] h-[17px]"
             />{" "}
           </a>
-          <img
+          <a
+            href="https://x.com/LifecomRadio"
+            target="_blank"
+            rel="noreferrer"
+          ><img
             src="/images/home/twitter.svg"
             alt=""
             className="cursor-pointer  lg:w-[30px] lg:h-[30px] w-[17px] h-[17px]"
-          />
+          /></a>
           <a
             href="https://www.instagram.com/lifecom_radioandtelevision/"
             target="_blank"

@@ -20,7 +20,11 @@ const media = async ({locale}) => {
             target="_blank"
             rel="noreferrer"
           ><img src='/images/home/facebook.svg' alt=''/></a>
-            <img src='/images/home/twitter.svg' alt=''/>
+             <a
+            href="https://x.com/LifecomRadio"
+            target="_blank"
+            rel="noreferrer"
+          ><img src='/images/home/twitter.svg' alt=''/></a>
             <a
             href="https://www.instagram.com/lifecom_radioandtelevision/"
             target="_blank"

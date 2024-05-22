@@ -13,7 +13,11 @@ const socials = () => {
             target="_blank"
             rel="noreferrer"
           > <img src='/images/home/facebook.svg' alt='' className='cursor-pointer w-[30px] h-[30px]'/> </a>
-            <img src='/images/home/twitter.svg' alt='' className='cursor-pointer w-[30px] h-[30px]'/>
+            <a
+            href="https://x.com/LifecomRadio"
+            target="_blank"
+            rel="noreferrer"
+          > <img src='/images/home/twitter.svg' alt='' className='cursor-pointer w-[30px] h-[30px]'/></a>
             <a
             href="https://www.instagram.com/lifecom_radioandtelevision/"
             target="_blank"
