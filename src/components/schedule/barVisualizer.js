@@ -10,8 +10,6 @@ const BarVisualizer = () => {
     canvas.height = 50; // Half of the original height
 
     const drawBars = () => {
-      requestAnimationFrame(drawBars);
-
       // Clear the canvas
       context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -29,7 +27,9 @@ const BarVisualizer = () => {
       }
     };
 
-    drawBars();
+    const intervalId = setInterval(drawBars, 200); // Adjust interval to slow down the animation (200ms)
+
+    return () => clearInterval(intervalId); // Cleanup on component unmount
   }, []);
 
   return <canvas ref={canvasRef} />;
