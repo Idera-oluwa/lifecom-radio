@@ -25,10 +25,6 @@ const onAir = () => {
   useEffect(() => {
     RadioData();
   }, [radioInfo]);
-
-  console.log(radioInfo);
-  console.log(`${url}${radioInfo?.image}`);
-
   
 
   return (
