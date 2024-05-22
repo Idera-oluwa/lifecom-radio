@@ -42,7 +42,7 @@ const forminput = () => {
         <button type='submit' className="w-full h-[40px] lg:h-[67px] bg-[#03345F] mt-[0.5rem] lg:mt-[1rem] rounded-[4px] flex justify-center items-center font-semibold text-white text-[10px] lg:text-[16px]">
           Submit
         </button>
-        <ToastContainer/>
+        <ToastContainer toastClassName='toast'/>
       </form>
   )
 }

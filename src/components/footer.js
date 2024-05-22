@@ -52,7 +52,7 @@ const footer = ({locale}) => {
 
   return (
     <div className='hidden md:block mt-[12rem] bg-[#09172E] w-full pt-[3rem]'>
-        <ToastContainer />
+        <ToastContainer toastClassName='toast'/>
         <div className='w-[90vw] mx-auto flex flex-row justify-between pb-[4rem]'>
          <div>
             <img src='/images/home/logo.svg' alt='' className='w-[96px] h-[96px]'/>
