@@ -60,8 +60,21 @@ const Header = () => {
          </div>
          </div>
          <div className='flex flex-row justify-between items-center'>
-           <div className='flex flex-col'>
+           <div className='flex flex-col w-[336px] items-center'>
+            <img src='/images/donations/tide-logo.png' className='w-[105px] h-[105px]'/>
+            <div>
+                <div className='w-[336px] h-[229px] bg-gradient-to-b from-[#07347A66] to-[#0398A199] pt-[2px] mt-[1rem]'>
+                <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto flex flex-col justify-center items-center'>
+            <p className='text-[12px] text-[#CCC9DC] font-medium'>ACCOUNT NAME</p>
+            <p className='text-[16px] text-white font-medium'>Lifecom Broadcasting Network</p>
+            <p className='text-[12px] text-[#CCC9DC] font-medium mt-[1rem]'>NETWORK ACCOUNT</p>
+            <p className='text-[16px] text-white font-medium'>22778020</p>
+            <p className='text-[12px] text-[#CCC9DC] font-medium mt-[1rem]'>SORT CODE</p>
+            <p className='text-[16px] text-white font-medium'>040605</p>
+          </div>
 
+                </div>
+            </div>
            </div>
          </div>
         </div>
