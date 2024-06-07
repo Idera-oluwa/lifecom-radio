@@ -29,7 +29,7 @@ const faq = ({ locale }) => {
     setActiveIndex(null);
   };
   return (
-    <div className="bg-[#1B2A4166] pt-[2rem] pb-[3rem] mt-[2rem] lg:mt-[10rem]">
+    <div className="bg-[#1B2A4166] pt-[2rem] pb-[3rem] mt-[2rem] lg:mt-[10rem] border-t-[#324A5F] border-b-[#324A5F] border-t-[1px] border-b-[1px]">
       <div className="w-[90%] mx-auto">
         <p className="font-semibold text-[18px] lg:text-[32px] text-white text-center">
           {text1}
