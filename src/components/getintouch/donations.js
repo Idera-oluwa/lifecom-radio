@@ -8,7 +8,7 @@ const Donations = () => {
          <img src='/images/getintouch/donations-elipse.png' alt='' className='hidden md:block absolute top-0 right-0'/>
          <div className='flex flex-col md:ml-[8%] w-full'>
            <p className='font-normal text-[20px] md:text-[40px] text-white leading-[24.2px] md:leading-[48.41px] text-center md:text-left mx-auto md:ml-0 w-[240px] md:w-[466px]'>Want to support us with donations?</p>
-           <p className='font-normal text-[10px] md:text-[14px] text-[#CCC9DC] leading-[16.94px] w-[349px] md:w-[527px] mt-[1rem] text-center md:text-left mx-auto md:ml-0'>Do you like what you hear on lifecom radio and would like to contribute in form of donations? </p>
+           <p className='font-normal text-[10px] md:text-[14px] text-[#CCC9DC] leading-[16.94px] w-[90%] md:w-[527px] mt-[1rem] text-center md:text-left mx-auto md:ml-0'>Do you like what you hear on lifecom radio and would like to contribute in form of donations? </p>
            <div className='md:hidden bg-logo-bg bg-cover bg-no-repeat w-full h-[83px] flex flex-row justify-around items-center mt-[2rem] mb-[2rem]'>
              <img src='/images/donations/tide-logo.png' alt='' className='w-[68px] h-[68px]'/>
              <img src='/images/donations/paypal-icon.png' alt='' className='w-[117.4] h-[30px]'/>
