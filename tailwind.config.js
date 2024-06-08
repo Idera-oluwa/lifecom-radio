@@ -27,7 +27,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(260px, 1fr))",
-        smfluid: "repeat(auto-fit, minmax(160px, 1fr))",
+        smfluid: "repeat(auto-fit, minmax(130px, 1fr))",
       },
     },
   },
