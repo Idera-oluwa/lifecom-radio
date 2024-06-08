@@ -22,6 +22,7 @@ module.exports = {
         "onAir-bg2": "url('/images/schedule/bg-active.png')",
         "breaking-bg": "url('/images/home/breaking-news2.svg')",
         "breaking-bg2": "url('/images/home/breaking-news4.svg')",
+        "logo-bg": "url('/images/getintouch/logo-background.png')",
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(260px, 1fr))",
