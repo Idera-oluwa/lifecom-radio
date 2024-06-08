@@ -23,6 +23,7 @@ module.exports = {
         "breaking-bg": "url('/images/home/breaking-news2.svg')",
         "breaking-bg2": "url('/images/home/breaking-news4.svg')",
         "logo-bg": "url('/images/getintouch/logo-background.png')",
+        "socials-bg": "url('/images/about/socials-bg.png')",
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(260px, 1fr))",
