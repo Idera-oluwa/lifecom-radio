@@ -10,8 +10,8 @@ const team = async ({locale}) => {
           <p className='text-white text-[12px] md:text-[40px] font-medium'>{t('Our Team')}</p>
         <p className='w-[90%] text-center font-normal text-white text-[10px] md:text-[16px] leading-[12.1px] md:leading-[22.3px] mt-[0.5rem] md:mt-[1.2rem]'>{t('Get to know the individuals dedicated to making LifeCom radio an uplifting and entertaining radio station.')}</p>
      </div>
-     <div className='mt-[2.5rem] grid grid-cols-fluid w-[70vw] mx-auto'>
-     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='mt-[2.5rem] grid grid-cols-fluid w-[70vw] mx-auto justify-center'>
+     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -26,7 +26,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -41,7 +41,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -56,7 +56,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#152947] to-[#456CA7] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -71,7 +71,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -86,7 +86,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -101,7 +101,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
@@ -116,7 +116,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem]'>
+     <div className='bg-gradient-to-b from-[#36AE99] to-[#18718D70] w-[213px] h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[165px] h-[160px] mx-auto'/>
