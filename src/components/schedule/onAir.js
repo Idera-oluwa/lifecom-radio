@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import ReactHowler from "react-howler";
 import BarVisualizer from "./barVisualizer";
+import Link from "next/link";
 
 const onAir = () => {
   const [playing, setPlaying] = useState(false);
@@ -42,7 +43,7 @@ const onAir = () => {
             <BarVisualizer />
           </div> }
       <div className="w-[178px] h-[181px] md:w-[246px] md:h-[250px] mx-auto bg-gradient-to-b from-[#004461] to-[#86890200] flex justify-center items-center rounded-[4px]">
-      <div className="absolute top-0 left-0 mt-[2rem] md:mt-[4rem] ml-[5%] w-[100px] md:w-[146px] h-[29px] md:h-[39px] bg-[#324A5F] rounded-[4px] flex justify-center items-center text-white text-[10px] md:text-[14px] font-medium cursor-pointer">Back to Home</div>
+      <Link href='/'><div className="absolute top-0 left-0 mt-[2rem] md:mt-[4rem] ml-[5%] w-[100px] md:w-[146px] h-[29px] md:h-[39px] bg-[#324A5F] rounded-[4px] flex justify-center items-center text-white text-[10px] md:text-[14px] font-medium cursor-pointer">Back to Home</div></Link>
       <img
         src={
           radioInfo?.image
