@@ -6,19 +6,20 @@ const media = async ({locale}) => {
   const { t:h } = await initTranslations(locale,['home']);
   return (
     <div className='relative'>
-      <img src='/images/about/about-mic.png' alt='' className='hidden md:block absolute right-0 top-0 mt-[-11rem]'/>
-      <div className=' w-[80vw] h-[367px] mx-auto bg-gradient-to-b from-[#114E70] to-[#1E859B] pt-[2px] mt-[4rem] md:mt-[14rem] rounded-[10px]'>
-        <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto py-[2rem] px-[1rem] rounded-[10px]'>
-        <div className='mx-auto flex flex-row justify-between items-center md:items-start mb-[2rem] md:mb-0'>
-     <img src='/images/about/about-onair.png' className=' md:w-[528px] md:h-[297px] w-[179px] h-[101px] ml-[1rem]'/>
-          <div className='md:mt-[2rem]'>
+      <img src='/images/about/about-mic.png' alt='' className='hidden md:block absolute right-0 top-0 md:mt-[-11rem]'/>
+      <div className='md:w-[80vw] h-[367px] mx-auto lg:bg-gradient-to-b lg:from-[#114E70] lg:to-[#1E859B] pt-[2px] mt-[4rem] md:mt-[14rem] rounded-[10px]'>
+        <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto py-[2rem] md:px-[1rem] rounded-[10px]'>
+        <div className='mx-auto flex flex-col md:flex-row justify-between items-center md:items-start mb-[2rem] md:mb-0'>
+     <img src='/images/about/about-onair.png' className=' hidden md:block md:w-[528px] md:h-[297px] w-full h-[101px] ml-[1rem]'/>
+     <img src='/images/about/news-2 1.png' className='md:hidden w-full'/>
+          <div className='mt-[2rem]'>
            <div className='border-[#062048] border-[2px] flex flex-row rounded-[10px] w-[304px] h-[89px] justify-center items-center gap-[3rem]'>
            <p className='text-[16px] font-medium text-white'>87.7FM Kent UK</p>
            <img src='/images/home/logo.svg' alt='' className='w-[57px] h-[57px]'/>
            </div>
             <div className='bg-socials-bg bg-cover mt-[1rem] w-[304px] h-[123px] flex flex-col justify-center items-center'>
-            <p className='hidden md:block font-medium text-[14px] leading-[17px] text-[#CCC9DC]'>{t('Follow us on social media')}</p>
-            <div className='hidden md:flex flex-row gap-[0.5rem] mt-[1rem]'>
+            <p className='block font-medium text-[14px] leading-[17px] text-[#CCC9DC]'>{t('Follow us on social media')}</p>
+            <div className='flex flex-row gap-[0.5rem] mt-[1rem]'>
             <a
             href="https://www.facebook.com/Lifecomfm.co.uk/"
             target="_blank"
