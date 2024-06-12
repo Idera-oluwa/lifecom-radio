@@ -74,7 +74,7 @@ const Header = () => {
           </div>
 
                 </div>
-                <p className='w-[337px] text-white font-medium leading-[14.52px] text-[12px] mt-[1rem]'>Note: This method of transfer is for users within the UK and surrounding environments</p>
+                <p className='w-[300px] md:w-[337px] text-white font-medium leading-[14.52px] text-[10px] md:text-[12px] mt-[1rem]'>Note: This method of transfer is for users within the UK and surrounding environments</p>
             </div>
            </div>
            <img src='/images/donations/lines.png' alt='' className='hidden md:block'/>
@@ -92,7 +92,7 @@ const Header = () => {
 
                 </div>
             </div>
-            <p className='w-[337px] text-white font-medium leading-[14.52px] text-[12px] mt-[1rem]'>Note: This method of transfer is for users within Nigeria and surrounding environments</p>
+            <p className='w-[300px] md:w-[337px] text-white font-medium leading-[14.52px] text-[10px] md:text-[12px] mt-[1rem]'>Note: This method of transfer is for users within Nigeria and surrounding environments</p>
            </div>
          </div>
         </div>
