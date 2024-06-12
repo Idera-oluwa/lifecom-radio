@@ -14,8 +14,8 @@ const about = async ({locale}) => {
         <p className='font-medium text-[15px] text-white leading-[18px]'>{h('Start Listening')}</p>
         <img src='/images/home/play.svg' alt=''/>
         </div></Link>
-        <Link href="/onair"><div className='w-[60px] h-[27px] bg-[#324A5F] rounded-[4px] md:hidden flex flex-row justify-center items-center cursor-pointer gap-[0.5rem] hover:bg-[#1B2A41] transition-all ease-out duration-500`'>
-          <p className='text-white text-[10px] font-semibold leading-[12px]'>Listen</p>
+        <Link href="/onair" className='md:hidden'><div className='w-[60px] h-[27px] bg-[#324A5F] rounded-[4px] md:hidden flex flex-row justify-center items-center cursor-pointer gap-[0.5rem] hover:bg-[#1B2A41] transition-all ease-out duration-500`'>
+          <p className='text-white text-[10px] font-semibold leading-[12px] md:hidden'>Listen</p>
         </div></Link>
         </div>
         <div className='w-full bg-[#1B2A41] h-[2px] md:h-[5px] mt-[1rem] md:mt-[3rem] rounded-[10px]'></div>
