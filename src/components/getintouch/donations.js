@@ -16,7 +16,7 @@ const Donations = () => {
            </div>
            <Link href="/donations"><div className='bg-[#002545] w-[156px] h-[49px] rounded-[4px] mt-[1rem] text-white flex justify-center items-center text-[16px] font-medium cursor-pointer mx-auto md:ml-0'>Donate</div></Link>
          </div>
-         <img src='/images/getintouch/payment-logos.png' alt='' className='ml-[7rem] hidden md:block'/>
+         <img src='/images/getintouch/payment-logos.png' alt='' className='mr-[16rem] hidden md:block'/>
         </div>
     </div>
   )
