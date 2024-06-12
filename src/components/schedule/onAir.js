@@ -39,6 +39,7 @@ const onAir = () => {
         playing={playing}
         onPlay={handleOnPlay}
       />
+      <div className="bg-doodle1 w-full h-full bg-cover bg-no-repeat relative flex flex-col justify-center items-center pt-[2rem]">
       {playing && <div className="absolute top-0 mt-[119px] md:mt-[210px] right-0 mr-[calc(50%-9rem)] md:mr-[calc(50%-16rem)] transform -translate-y-1/2">
             <BarVisualizer />
           </div> }
@@ -76,39 +77,7 @@ const onAir = () => {
             }`}
           />
         </div>
-      {/* <img
-        src={`${
-          playing ? "/images/schedule/onair2.png" : "/images/schedule/onair.png"
-        }`}
-        alt=""
-        className="absolute w-[110px] h-[113px] lg:w-auto lg:h-auto right-0 bottom-0  mb-[2rem] mr-[10%] md:mr-[6rem]"
-      /> */}
-
-      {/* <div className="flex flex-row absolute left-0 bottom-0 mb-[4rem] ml-[10%] md:ml-[20%] gap-4 md:gap-[3rem] items-center">
-        <div
-          className="bg-transparent border-[#324A5F] border-4 w-[32px] h-[32px] lg:w-[55px] lg:h-[55px] rounded-full flex items-center justify-center cursor-pointer"
-          onClick={() => togglePlay()}>
-          <img
-            src={
-              playing ? "/images/podcasts/pause.png" : "/images/home/play.svg"
-            }
-            alt=""
-            className={`${
-              playing
-                ? "w-[10px] h-[12.5px] lg:w-[22px] lg:h-[22px]"
-                : "w-[10px] h-[12.5px] lg:w-[17.69px] lgh-[21.79px]"
-            }`}
-          />
         </div>
-        <div className="">
-          <p className="font-medium text-[10px] leading-3 md:text-[14px] text-[#CCC9DC] lg:leading-[17px]">
-            ON AIR NOW
-          </p>
-          <p className="font-semibold text-white text-[12px] lg:text-[16px] leading-3 lg:leading-[19px] mt-[0.5rem]">
-            {radioInfo?.album ? radioInfo.album : "Nil"}
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -20,6 +20,7 @@ module.exports = {
         "podcast-bg": "url('/images/podcasts/podcast-bg.svg')",
         "onAir-bg": "url('/images/schedule/bg-default.png')",
         "onAir-bg2": "url('/images/schedule/bg-active.png')",
+        "doodle1": "url('/images/schedule/radio-doodle.png')",
         "breaking-bg": "url('/images/home/breaking-news2.svg')",
         "breaking-bg2": "url('/images/home/breaking-news4.svg')",
         "logo-bg": "url('/images/getintouch/logo-background.png')",
