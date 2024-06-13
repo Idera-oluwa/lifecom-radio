@@ -17,7 +17,7 @@ const Layout = ({ children, params : {locale} }) => {
     const daysDifference = timeDifference / (1000 * 3600 * 24);
 
 
-    if (daysDifference >= 30) {
+    if (daysDifference >= 45) {
       setIsBlank(true);
     }
   }, []);

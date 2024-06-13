@@ -7,6 +7,7 @@ query AllBlogs {
       title
       slug
       id
+      category
     }
   }
   
@@ -18,6 +19,7 @@ query SingleBlog($slug: String!){
       slug
       title
       id
+      category
       updatedAt
       createdAt
       coverImage {

@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useGlobalContext, AppContext } from "@/context/context";
 
 const news = () => {
-  const { blogs } = useGlobalContext();
-  const featuredBlogs = blogs.slice(0);
+  const { blogs,getGlobal,getNational,filteredBlogs,getAllBlogs } = useGlobalContext();
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(3); 
-  const totalPages = Math.ceil(blogs.length / itemsPerPage);
+  const totalPages = Math.ceil(filteredBlogs.length / itemsPerPage);
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredBlogs.slice(indexOfFirstItem, indexOfLastItem);
   const updateItemsPerPage = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth <= 768) { 
@@ -20,6 +22,8 @@ const news = () => {
   };
   } 
 
+console.log(filteredBlogs)
+
   useEffect(() => {
     updateItemsPerPage();
     window.addEventListener('resize', updateItemsPerPage);
@@ -27,10 +31,6 @@ const news = () => {
       window.removeEventListener('resize', updateItemsPerPage);
     };
   }, []);
-
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = blogs.slice(indexOfFirstItem, indexOfLastItem);
 
   const nextPage = () => {
     if (currentPage !== totalPages) {
@@ -48,12 +48,16 @@ const news = () => {
 
   return (
     <div className="w-[90vw] mx-auto mt-[6rem] md:mt-[9rem]">
-      <p className="font-semibold text-white text-[14px] md:text-[24px] leading-[24px] mb-[-2rem] md:mb-0">
+      <div className="flex flex-row gap-[2rem]">
+      <p className="font-semibold text-white text-[14px] md:text-[24px] leading-[24px] mb-[-2rem] md:mb-0 cursor-pointer" onClick={getAllBlogs}>
         News
       </p>
+      <p className="text-[#CCC9DC] text-[12px] md:text-[16px] leading-[24px] font-medium cursor-pointer" onClick={getNational}>NATIONAL</p>
+      <p className="text-[#CCC9DC] text-[12px] md:text-[16px] leading-[24px] font-medium cursor-pointer" onClick={getGlobal}>GLOBAL</p>
+      </div>
       <div className="mt-[1rem] md:mt-[4rem] lg:flex grid grid-cols-2 md:grid-cols-3  lg:flex-col  gap-[0.7rem] sm:gap-5 md:gap-6 lg:gap-[4rem] w-full">
         {currentItems.map((news) => {
-          const { slug, title, id, coverImage } = news;
+          const { slug, title, id, coverImage,category } = news;
           return (
             <div
               className="flex flex-col lg:flex-row gap-[10px] md:gap-[16px]  lg:gap-[4rem] items-center mt-[2rem] md:mt-0"
@@ -62,7 +66,7 @@ const news = () => {
               <img src={coverImage.url} className="w-full lg:w-auto" alt="" />
               <div className="flex flex-col justify-center items-center lg:items-start gap-[10px] md:gap-[16px] lg:gap-[1.5rem]">
                 <p className="hidden md:block font-normal text-[12px] text-white leading-[14.5px]">
-                  GLOBAL NEWS
+                  {category} NEWS
                 </p>
                 <p className="font-medium text-[10px] text-center lg:text-left leading-3 lg:text-[24px] lg:leading-[29px] text-[#F5F5F5] lg:w-[509px] w-[90%]">
                   {title.substring(0, 60) + "..."}
