@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useGlobalContext, AppContext } from "@/context/context";
 
 const news = () => {
-  const { blogs,getGlobal,getNational,filteredBlogs,getAllBlogs } = useGlobalContext();
+  const { blogs,getGlobal,getNational,filteredBlogs,getAllBlogs,global,national } = useGlobalContext();
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(3); 
   const totalPages = Math.ceil(filteredBlogs.length / itemsPerPage);
@@ -49,11 +49,17 @@ console.log(filteredBlogs)
   return (
     <div className="w-[90vw] mx-auto mt-[6rem] md:mt-[9rem]">
       <div className="flex flex-row gap-[2rem]">
-      <p className="font-semibold text-white text-[14px] md:text-[24px] leading-[24px] mb-[-2rem] md:mb-0 cursor-pointer" onClick={getAllBlogs}>
+        <p className="font-semibold text-white text-[14px] md:text-[24px] leading-[24px] mb-[-2rem] md:mb-0 cursor-pointer" onClick={getAllBlogs}>
         News
       </p>
-      <p className="text-[#CCC9DC] text-[12px] md:text-[16px] leading-[24px] font-medium cursor-pointer" onClick={getNational}>NATIONAL</p>
-      <p className="text-[#CCC9DC] text-[12px] md:text-[16px] leading-[24px] font-medium cursor-pointer" onClick={getGlobal}>GLOBAL</p>
+        <div className='flex flex-col'>
+        <p className={`${national? 'text-[#145C9B]' : 'text-[#CCC9DC]'} hover:text-[#145C9B] text-[12px] md:text-[16px] leading-[24px] font-medium cursor-pointer transition-all ease-out duration-500`} onClick={getNational}>NATIONAL</p>
+        <div className={`${national? 'w-[41px]' :'w-0'} h-[2px] bg-[#145C9B] mx-auto transition-all ease-out duration-500`}></div>
+        </div>
+        <div className='flex flex-col'>
+      <p className={`${global? 'text-[#145C9B]' : 'text-[#CCC9DC]'} hover:text-[#145C9B] text-[12px] md:text-[16px] leading-[24px] font-medium cursor-pointer transition-all ease-out duration-500`} onClick={getGlobal}>GLOBAL</p>
+      <div className={`${global? 'w-[41px]' :'w-0'} h-[2px] bg-[#145C9B] mx-auto transition-all ease-out duration-500`}></div>
+        </div>
       </div>
       <div className="mt-[1rem] md:mt-[4rem] lg:flex grid grid-cols-2 md:grid-cols-3  lg:flex-col  gap-[0.7rem] sm:gap-5 md:gap-6 lg:gap-[4rem] w-full">
         {currentItems.map((news) => {

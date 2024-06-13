@@ -13,6 +13,8 @@ const AppProvider = ({children}) =>{
     const [blogs, setBlogs] = useState([]);
     const [podcasts, setPodcasts] = useState([]);
     const [filteredBlogs, setFilteredBlogs] = useState([]);
+    const [global, setGlobal] = useState(false)
+    const [national, setNational] = useState(false)
 
     useEffect(() => {
         getArticles().then(result => {
@@ -28,18 +30,24 @@ const AppProvider = ({children}) =>{
     }, [])
     const getGlobal = () => {
       setFilteredBlogs(blogs.filter(blog => blog.category === 'GLOBAL'));
+      setGlobal(true)
+      setNational(false)
     };
   
     const getNational = () => {
       setFilteredBlogs(blogs.filter(blog => blog.category === 'NATIONAL'));
+      setGlobal(false)
+      setNational(true)
     };
     const getAllBlogs = () =>{
       setFilteredBlogs(blogs)
+      setGlobal(false)
+      setNational(false)
     }
     
     
     return(
-        <AppContext.Provider value={{articles, blogs, podcasts, getGlobal,getNational,filteredBlogs,getAllBlogs}}>
+        <AppContext.Provider value={{articles, blogs, podcasts, getGlobal,getNational,filteredBlogs,getAllBlogs, global,national}}>
            {children}
         </AppContext.Provider>
     )
