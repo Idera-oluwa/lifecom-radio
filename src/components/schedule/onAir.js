@@ -44,7 +44,7 @@ const OnAir = () => {
             <BarVisualizer />
           </div> }
       <div className="relative w-[178px] h-[181px] md:w-[246px] md:h-[250px] mx-auto">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#004461] via-[#2A6F63CC] to-[#00446154] animate-gradient-rotate bg-[length:200%_200%] rounded-[4px] p-[2px] md:p-[3px] flex justify-center items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#004461] via-[#43b19ecc] to-[#00446154] animate-gradient-rotate bg-[length:200%_200%] rounded-[4px] p-[2px] md:p-[3px] flex justify-center items-center">
           
             <img
               src={
