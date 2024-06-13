@@ -26,6 +26,16 @@ module.exports = {
         "logo-bg": "url('/images/getintouch/logo-background.png')",
         "socials-bg": "url('/images/about/socials-bg.png')",
       },
+      animation: {
+        circularMotion: 'circularMotion 1s linear infinite',
+      },
+      keyframes: {
+        circularMotion: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit, minmax(260px, 1fr))",
         smfluid: "repeat(auto-fit, minmax(130px, 1fr))",
