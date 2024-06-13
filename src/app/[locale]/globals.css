@@ -43,3 +43,24 @@ input[type="range"]::-webkit-slider-thumb {
     background-position: 0% 50%;
   }
 }
+
+@keyframes circular-motion {
+  0% {
+    transform: translate(0, 0) rotate(0deg) translate(100px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) translate(100px) rotate(-360deg);
+  }
+}
+
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

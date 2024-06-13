@@ -28,6 +28,11 @@ module.exports = {
       },
       animation: {
         circularMotion: 'circularMotion 1s linear infinite',
+        'circular-motion': 'circular-motion 4s linear infinite',
+        'gradient-rotate': 'gradient-rotate 1s linear infinite',
+      },
+      backgroundSize: {
+        '200%': '200%',
       },
       keyframes: {
         circularMotion: {
