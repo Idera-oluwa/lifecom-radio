@@ -8,7 +8,7 @@ import Download2 from '@/components/home-mobile/download'
 
 const page = ({params : {locale}}) => {
   return (
-    <div className='pt-[0rem] md:pt-[7rem] mb-[3rem] overflow-hidden'>
+    <div className='pt-[0rem] md:pt-[7rem] mb-[3rem]'>
         <About locale={locale}/>
         <Media locale={locale}/>
         <Team locale={locale}/>

@@ -5,11 +5,11 @@ const media = async ({locale}) => {
   const { t } = await initTranslations(locale,['about']);
   const { t:h } = await initTranslations(locale,['home']);
   return (
-    <div className='relative'>
-      <img src='/images/about/about-mic.png' alt='' className='hidden md:block absolute right-0 top-0 md:mt-[-11rem]'/>
-      <div className='md:w-[80vw] h-[367px] mx-auto lg:bg-gradient-to-b lg:from-[#114E70] lg:to-[#1E859B] pt-[2px] mt-[4rem] md:mt-[14rem] rounded-[10px]'>
+    <div className='relative '>
+      <img src='/images/about/about-mic.png' alt='' className='hidden lg:block absolute right-0 top-0 md:mt-[-11rem]'/>
+      <div className='lg:overflow-hidden md:w-[80vw] h-[367px] mx-auto lg:bg-gradient-to-b lg:from-[#114E70] lg:to-[#1E859B] pt-[2px] mt-[4rem] md:mt-[14rem] rounded-[10px]'>
         <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto py-[2rem] md:px-[1rem] rounded-[10px]'>
-        <div className='mx-auto flex flex-col md:flex-row justify-between items-center md:items-start mb-[2rem] md:mb-0'>
+        <div className='mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start mb-[2rem] md:mb-0'>
      <img src='/images/about/about-onair.png' className=' hidden md:block md:w-[528px] md:h-[297px] w-full h-[101px] ml-[1rem]'/>
      <img src='/images/about/news-2 1.png' className='md:hidden w-full'/>
           <div className='mt-[2rem]'>
@@ -40,7 +40,7 @@ const media = async ({locale}) => {
             </div>
            
           </div>
-          <div className='mt-[2rem] hidden md:flex flex-col items-center mr-[1rem]'>
+          <div className='mt-[2rem] hidden lg:flex flex-col items-center mr-[1rem]'>
             <img src='/images/home/headset.svg' className='w-[133px] h-[133px]'/>
             <p className='font-semibold text-white text-[14px] mt-[0.5rem]'>{t('Over 100K')} </p>
             <p className='font-semibold text-[#CCC9DC] text-[16px] mt-[0.2rem]'>LISTENERS</p>
