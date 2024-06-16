@@ -116,7 +116,7 @@ const team = async ({locale}) => {
       
      </div>
      </div>
-     <div className='bg-gradient-to-b  from-[#36AE99] to-[#18718D70]min-w-[119px] h-[168px] md:min-w-[213px] md:h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
+     <div className='bg-gradient-to-b  from-[#36AE99] to-[#18718D70] min-w-[119px] h-[168px] md:min-w-[213px] md:h-[289px] rounded-[4px] pt-[2px] mt-[1.5rem] mx-auto'>
      <div className='w-[calc(100%-4px)] bg-[#0C1821] h-[calc(100%-2px)] mx-auto p-[1rem] flex flex-col justify-center items-center rounded-[4px]'>
       <div>
       <img src='/images/about/team1.png' className='w-[93px] h-[94px] md:w-[165px] md:h-[160px] mx-auto'/>
