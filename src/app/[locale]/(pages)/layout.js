@@ -7,24 +7,24 @@ import Footersm from "@/components/footersm";
 const DEPLOYMENT_DATE = new Date('2024-05-14T00:00:00Z');
 
 const Layout = ({ children, params : {locale} }) => {
-  const [isBlank, setIsBlank] = useState(false);
-  console.log(DEPLOYMENT_DATE, isBlank)
+  // const [isBlank, setIsBlank] = useState(false);
+  // console.log(DEPLOYMENT_DATE, isBlank)
 
-  useEffect(() => {
-    const currentDate = new Date();
-    const utcCurrentDate = new Date(Date.UTC(currentDate.getUTCFullYear(), currentDate.getUTCMonth(), currentDate.getUTCDate()));
-    const timeDifference = utcCurrentDate - DEPLOYMENT_DATE;
-    const daysDifference = timeDifference / (1000 * 3600 * 24);
+  // useEffect(() => {
+  //   const currentDate = new Date();
+  //   const utcCurrentDate = new Date(Date.UTC(currentDate.getUTCFullYear(), currentDate.getUTCMonth(), currentDate.getUTCDate()));
+  //   const timeDifference = utcCurrentDate - DEPLOYMENT_DATE;
+  //   const daysDifference = timeDifference / (1000 * 3600 * 24);
 
 
-    if (daysDifference >= 45) {
-      setIsBlank(true);
-    }
-  }, []);
+  //   if (daysDifference >= 45) {
+  //     setIsBlank(true);
+  //   }
+  // }, []);
 
-  if (isBlank) {
-    return <div>Sorry, this website is no longer available.</div>;
-  }
+  // if (isBlank) {
+  //   return <div>Sorry, this website is no longer available.</div>;
+  // }
 
   return (
     <div>
