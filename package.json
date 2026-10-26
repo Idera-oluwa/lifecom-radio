@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node api.js && i18nexus pull && next dev",
-    "build": "node api.js && i18nexus pull && next build",
-    "start": "node api.js && i18nexus pull && next start",
+    "dev": "node init && i18nexus pull && next dev",
+    "build": "node init && i18nexus pull && next build",
+    "start": "node init && i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
